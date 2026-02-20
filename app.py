@@ -30,6 +30,15 @@ def home():
 
 @app.post("/predict")
 def predict(news: NewsItem):
+
+    # Minimum length check
+    word_count = len(news.text.split())
+    if word_count < 50:
+        return {
+            "error": "Input text too short. Please provide at least 50 words (full article recommended).",
+            "word_count": word_count
+        }
+
     inputs = tokenizer(
         news.text,
         return_tensors="pt",
@@ -48,5 +57,6 @@ def predict(news: NewsItem):
 
     return {
         "prediction": label,
-        "confidence": round(confidence, 4)
+        "confidence": round(confidence, 4),
+        "word_count": word_count
     }
