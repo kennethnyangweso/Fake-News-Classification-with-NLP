@@ -262,3 +262,14 @@ npm start
 
 <img width="658" height="374" alt="image" src="https://github.com/user-attachments/assets/cfdd66f2-b4dc-491d-9333-c65cd168a27e" />
 
+---
+
+## 👨‍💻 Author
+
+Kenneth Nyangweso
+Data Scientist | Electrical & Telecommunications Engineer
+
+📌 Passionate about Machine Learning, NLP, and AI-driven solutions
+📊 Specialized in Predictive Modeling, NLP Systems, and Data Analytics
+
+🔗 GitHub: https://github.com/kennethnyangweso
