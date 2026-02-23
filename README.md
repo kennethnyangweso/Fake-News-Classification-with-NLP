@@ -1,4 +1,5 @@
-# 📰 Fake News Classification Using NLP and Transformers
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/3f15d122-4a48-4045-bcb9-d69d9ebbdb82" />
+
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![NLP](https://img.shields.io/badge/NLP-Natural%20Language%20Processing-blue?style=for-the-badge)
