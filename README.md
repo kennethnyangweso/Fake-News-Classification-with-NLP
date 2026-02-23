@@ -113,6 +113,23 @@ For DistilBERT:
 
 ---
 
+## 📊 ExPloratory Data Analysis (EDA)
+
+<img width="644" height="508" alt="image" src="https://github.com/user-attachments/assets/81db2514-df0a-4839-892e-5e83ae3ba418" />
+
+<img width="681" height="580" alt="image" src="https://github.com/user-attachments/assets/2f995fad-b08c-4727-99e7-e40b6009b196" />
+
+<img width="676" height="503" alt="image" src="https://github.com/user-attachments/assets/2a1d425c-9220-4bcc-8130-6da9b8f50c4e" />
+
+<img width="624" height="334" alt="image" src="https://github.com/user-attachments/assets/4db25ffe-6d05-4688-baae-85d2ba3aba05" />
+
+### Key Observations
+
+- Imbalanced Classes: "Fake News" (0) significantly outweighs "Real News" (1).
+- Political Focus: Both categories are dominated by US politics, specifically terms like "Donald Trump," "Hillary Clinton," and "White House."
+Neutral Language: The most frequent words across both are functional terms like "said," "one," and "state," suggesting similar reporting styles on the surface.
+
+
 ## 🤖 Modeling and Evaluation
 
 | Model        | Accuracy (%) | F1-Score (%) |
