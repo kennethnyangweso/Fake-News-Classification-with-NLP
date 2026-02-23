@@ -1,1 +1,168 @@
-# Fake-News-Classification-with-NLP
+# 📰 Fake News Classification Using NLP and Transformers
+
+---
+
+## 🏢 Business Understanding
+
+The rapid spread of misinformation across digital platforms has created a significant societal challenge. Fake news influences public opinion, political stability, and trust in media institutions.
+
+This project builds an automated system capable of classifying news articles as **Fake** or **Real** using Natural Language Processing and Machine Learning techniques. The objective is to provide a scalable and reliable solution for detecting misleading information.
+
+---
+
+## 📖 Project Overview
+
+This project develops and compares multiple machine learning and deep learning models for fake news detection. The workflow includes:
+
+- Exploratory Data Analysis (EDA)
+- Text preprocessing and feature engineering
+- Training traditional ML models
+- Training deep learning models (LSTM, BiLSTM)
+- Fine-tuning DistilBERT transformer
+- Model evaluation and comparison
+- Local deployment using FastAPI and React
+
+The dataset primarily contains long, multi-paragraph articles, which significantly influences model behavior.
+
+---
+
+## ❓ Problem Statement
+
+Manual verification of online news is inefficient and prone to error. There is a need for an automated system that can:
+
+- Accurately distinguish between fake and real news articles  
+- Handle long-form content effectively  
+- Provide prediction confidence for reliability  
+
+The main challenge is building a model that generalizes well while maintaining high accuracy and F1-score.
+
+---
+
+## 🎯 Objectives
+
+- Train and compare:
+  - Naive Bayes
+  - Support Vector Machine (SVM)
+  - LSTM
+  - BiLSTM
+  - DistilBERT
+- Evaluate using Accuracy and F1-score
+- Optimize performance for multi-paragraph articles
+- Deploy the best-performing model locally
+- Document model strengths and limitations
+
+---
+
+## 📊 Success Metrics
+
+Evaluation metrics used:
+
+- Accuracy
+- F1-Score
+- Confidence scores
+- Stability on long-form articles
+
+Target benchmark:
+
+- Accuracy ≥ 95%
+- F1-score ≥ 95%
+
+---
+
+## 📚 Data Understanding
+
+The dataset consists of labeled news articles categorized as **Fake** or **Real**.
+
+Key findings from EDA:
+
+- Articles are typically multi-paragraph and long-form
+- Balanced class distribution
+- Significant variation in article length
+- Long articles provide richer contextual information
+
+Important insight:
+Transformer models perform better when sufficient contextual information is available.
+
+---
+
+## 🧹 Data Cleaning and Preprocessing
+
+Steps performed:
+
+- Removal of special characters and extra whitespace
+- Lowercasing (for classical models)
+- Tokenization
+- Padding and truncation for neural networks
+- Train-test split
+- Tensor conversion for deep learning models
+
+For DistilBERT:
+- Defined maximum token length
+- Truncated long articles to fit transformer constraints
+
+---
+
+## 🤖 Modeling and Evaluation
+
+| Model        | Accuracy (%) | F1-Score (%) |
+|--------------|-------------|--------------|
+| Naive Bayes  | 85          | 84           |
+| SVM          | 96          | 96           |
+| LSTM         | 91          | 90           |
+| BiLSTM       | 96          | 95           |
+| DistilBERT   | 98          | 98           |
+
+### Key Observations
+
+- DistilBERT achieved the highest performance.
+- SVM performed exceptionally well among traditional models.
+- LSTM models required sufficient context for optimal results.
+- Multi-paragraph articles significantly improved transformer performance.
+- Very short inputs may reduce reliability.
+
+---
+
+## 🚀 Deployment
+
+### Backend
+
+- Built using FastAPI
+- Hosts trained models
+- Exposes a prediction endpoint
+- Returns:
+  - Predicted label (Fake/Real)
+  - Confidence score
+
+### Frontend
+
+- Built using React
+- Accepts user article input
+- Sends request to backend
+- Displays prediction and confidence
+
+### Architecture Flow
+
+User Input → Frontend → Backend API → Model Inference → Prediction → Frontend Display
+
+### Important Note
+
+The system performs best with full-length, multi-paragraph articles, as models were trained primarily on long-form content.
+
+---
+
+## ✅ Conclusions
+
+- DistilBERT is the best-performing model (98% Accuracy, 98% F1).
+- SVM is strong for shorter articles.
+- Article length significantly affects transformer performance.
+- Combining classical ML and deep learning improves robustness.
+
+---
+
+## 💡 Recommendations
+
+- Use DistilBERT as the primary production model.
+- Implement model selection logic based on input length.
+- Expand dataset with more short-form content.
+- Consider cloud deployment for scalability.
+- Add monitoring and caching for performance optimization.
