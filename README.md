@@ -114,7 +114,7 @@ For DistilBERT:
 
 ---
 
-## 📊 ExPloratory Data Analysis (EDA)
+## 📊 Exploratory Data Analysis (EDA)
 
 <img width="644" height="508" alt="image" src="https://github.com/user-attachments/assets/81db2514-df0a-4839-892e-5e83ae3ba418" />
 
