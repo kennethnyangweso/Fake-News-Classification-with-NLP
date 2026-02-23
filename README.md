@@ -229,6 +229,35 @@ npm install
 # Start frontend
 npm start
 ```
+## 🏗️ Architecture Diagram
+
+```
++--------------------+           +--------------------+          +-------------------+
+|   React Frontend   |  <------> |  FastAPI Backend   |  ------> |  NLP Models       |
+|  (User Input)      |  POST     |  /predict endpoint |  input   | - Naive Bayes     |
+|  Textarea/Submit   |  JSON     |  Receives JSON     |          | - SVM             |
++--------------------+           +--------------------+          | - LSTM            |
+                                                                      | - BiLSTM         |
+                                                                      | - DistilBERT     |
+                                                                      +-------------------+
+                                                                                |
+                                                                                |
+                                                                                v
+                                                                      +-------------------+
+                                                                      | Prediction Output |
+                                                                      | - Label (Fake/Real)|
+                                                                      | - Confidence       |
+                                                                      +-------------------+
+                                                                                |
+                                                                                v
+                                                                    +-------------------+
+                                                                    | Frontend Display  |
+                                                                    | - Show Label      |
+                                                                    | - Show Confidence |
+                                                                    +-------------------+
+
+```
+
 ## ⭐ Expected Results 
 
 <img width="658" height="374" alt="image" src="https://github.com/user-attachments/assets/cfdd66f2-b4dc-491d-9333-c65cd168a27e" />
