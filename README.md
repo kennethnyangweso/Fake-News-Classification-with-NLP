@@ -55,8 +55,8 @@ The main challenge is building a model that generalizes well while maintaining h
 - Train and compare:
   - Naive Bayes
   - Support Vector Machine (SVM)
-  - LSTM
-  - BiLSTM
+  - Long Short-Term Memory (LSTM)
+  - Bi-directional Long Short-Term Memory (BiLSTM)
   - DistilBERT
 - Evaluate using Accuracy and F1-score
 - Optimize performance for multi-paragraph articles
@@ -149,6 +149,16 @@ For DistilBERT:
 - LSTM models required sufficient context for optimal results.
 - Multi-paragraph articles significantly improved transformer performance.
 - Very short inputs may reduce reliability.
+
+## Model Evaluation Visuals
+
+<img width="522" height="470" alt="image" src="https://github.com/user-attachments/assets/7a2201ed-6a56-4e7c-8a6c-f5bbd07a2457" />
+
+
+### Key Observation
+
+Achieved a near-perfect classification with only 65 False Positives and 62 False Negatives.
+
 
 ---
 
