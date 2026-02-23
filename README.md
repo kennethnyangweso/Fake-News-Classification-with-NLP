@@ -127,8 +127,9 @@ For DistilBERT:
 
 - Imbalanced Classes: "Fake News" (0) significantly outweighs "Real News" (1).
 - Political Focus: Both categories are dominated by US politics, specifically terms like "Donald Trump," "Hillary Clinton," and "White House."
-Neutral Language: The most frequent words across both are functional terms like "said," "one," and "state," suggesting similar reporting styles on the surface.
+-  Neutral Language: The most frequent words across both are functional terms like "said," "one," and "state," suggesting similar reporting styles on the surface.
 
+---
 
 ## 🤖 Modeling and Evaluation
 
@@ -194,3 +195,36 @@ The system performs best with full-length, multi-paragraph articles, as models w
 - Expand dataset with more short-form content.
 - Consider cloud deployment for scalability.
 - Add monitoring and caching for performance optimization.
+
+## How to test
+
+``` # Clone repository
+git clone <your-repo-url>
+
+# Navigate to backend
+cd Fake_News_Backend
+
+# Create virtual environment
+python -m venv venv
+
+# Activate environment
+# Windows
+venv\Scripts\activate
+# macOS/Linux
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run backend
+uvicorn app:app --reload
+
+# Open new terminal and navigate to frontend
+cd Fake_News_Frontend
+
+# Install frontend dependencies
+npm install
+
+# Start frontend
+npm start
+```
