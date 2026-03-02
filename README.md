@@ -277,9 +277,11 @@ npm start
 ## 👨‍💻 Author
 
 Kenneth Nyangweso
+
 Data Scientist | Electrical & Telecommunications Engineer
 
 📌 Passionate about Machine Learning, NLP, and AI-driven solutions
+
 📊 Specialized in Predictive Modeling, NLP Systems, and Data Analytics
 
 🔗 GitHub: https://github.com/kennethnyangweso
